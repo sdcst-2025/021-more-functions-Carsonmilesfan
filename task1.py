@@ -13,9 +13,15 @@ Sample assertions:
 assert btcTocad(1) == 45000
 (2 points) 
 """
-
-def btcTocad():
-    pass
+import math
+def btcTocad(tr):
+    try:
+        rt = float(tr)
+        rat = rt * 45000
+    except:
+        rat = 'error'
+    
+    return rat
 
 
 """

@@ -21,8 +21,38 @@ assert triangle(1,1,4) == 0
 (2 points)
 """
 
-def triangle():
-    return
+def triangle(a,b,c):
+
+    A = a ** 2
+    B = b ** 2
+    C = c ** 2
+    
+    if a >= b:
+        if a >= c:
+            d = a 
+    if b > a:
+        if b >= c:
+            d = b 
+    if c > a:
+        if c > b:
+            d = c
+
+    if A + B + C - d ** 2 == d ** 2:
+        sigmaboy = 2
+
+    if A + B + C - d ** 2 > d ** 2:
+        sigmaboy = 1
+
+    if A + B + C - d ** 2 < d ** 2:
+        sigmaboy = 3
+
+    if a + b < d:
+        sigmaboy = 0
+            
+
+
+
+    return sigmaboy
 
 def tests():
     assert triangle(12,5,13) == 2     
